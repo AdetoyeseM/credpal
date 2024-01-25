@@ -1,6 +1,17 @@
 # credpal_assessment
 
-A new Flutter project.
+This repository contains a Flutter project showcasing the implementation of UI tests using the Flutter framework. 
+
+## App
+Download the `app-release.apk` to try out the release version
+<br>
+<a href="./app-release.apk"><img src="https://playerzon.com/asset/download.png" width="120"></img></a>
+<br>
+
+
+| Images| Images|
+|------|-------|
+|<img src="flutter_01.png" width="250">|
 
 ## Getting Started
 
