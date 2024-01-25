@@ -1,16 +1,18 @@
 import 'package:credpal_assessment/screens/constants/colors/colors.dart';
 import 'package:credpal_assessment/screens/constants/text_decoration/text_decoration.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class MerchantsCard extends StatelessWidget {
   const MerchantsCard(
       {super.key,
       required this.title,
+      this.isPng,
       required this.isActive,
       this.image,
       required this.color});
   final String? title, image;
-  final bool? isActive;
+  final bool? isActive, isPng;
   final Color? color;
 
   @override
@@ -22,9 +24,16 @@ class MerchantsCard extends StatelessWidget {
             Container(
                 height: 60,
                 width: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: color),
-                child: Image.asset("asset/images/pngs/$image.png")),
+                padding: EdgeInsets.all(8),
+                decoration: BoxDecoration(shape: BoxShape.circle, color: color),
+                child: isPng != null
+                    ? Image.asset(
+                        "assets/images/pngs/$image.png",
+                        color: Colors.white,
+                      )
+                    : SvgPicture.asset(
+                        "assets/images/svgs/$image.svg", 
+                      )),
             Visibility(
               visible: isActive == true,
               child: Positioned(

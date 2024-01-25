@@ -29,37 +29,55 @@ class MerchantsSection extends StatelessWidget {
             runAlignment: WrapAlignment.spaceEvenly,
             crossAxisAlignment: WrapCrossAlignment.start,
             runSpacing: 32,
-            spacing: 24,
+            spacing: 32,
             children: [
               MerchantsCard(
-                image: "justrite",
-                  title: "JustRite", isActive: true, color: Color(0xff000065)),
+                  image: "slot",
+                  isPng: true,
+                  title: "Slot",
+                  isActive: true,
+                  color: Color(0xffED3237)),
               MerchantsCard(
-                  title: "Orile Restaurant",
+                  title: "Pointek",
+                  image: "pointek",
+                  isPng: true,
+                  isActive: true,
+                  color: Color(0xff0077C9)),
+              MerchantsCard(
+                  image: "ogabassey",
+                  title: "ogabassey",
+                  isActive: true,
+                  color: Color(0xffF1F3FE)),
+              MerchantsCard(
+                  image: "hub",
+                  isPng: true,
+                  title: "Hubmart",
                   isActive: true,
                   color: Color(0xff000065)),
+                   MerchantsCard(
+                  image: "slot",
+                  isPng: true,
+                  title: "Slot",
+                  isActive: true,
+                  color: Color(0xffED3237)),
               MerchantsCard(
-                  title: "Slot", isActive: true, color: Color(0xff000065)),
+                  title: "Pointek",
+                  image: "pointek",
+                  isPng: true,
+                  isActive: true,
+                  color: Color(0xff0077C9)),
               MerchantsCard(
-                  title: "Pointek", isActive: true, color: Color(0xff000065)),
+                  image: "ogabassey",
+                  title: "ogabassey",
+                  isActive: true,
+                  color: Color(0xffF1F3FE)),
               MerchantsCard(
-                  title: "ogabassey", isActive: true, color: Color(0xff000065)),
-              MerchantsCard(
-                  title: "  Casper Stores",
-                  isActive: false,
-                  color: Color(0xff000065)),
-              MerchantsCard(
-                  title: "Dreamworks   ",
-                  isActive: false,
-                  color: Color(0xff000065)),
-              MerchantsCard(
-                  title: "Hubmart", isActive: true, color: Color(0xff000065)),
-              MerchantsCard(
-                  title: "Just Used", isActive: true, color: Color(0xff000065)),
-              MerchantsCard(
-                  title: "Just Fones",
+                  image: "hub",
+                  isPng: true,
+                  title: "Hubmart",
                   isActive: true,
                   color: Color(0xff000065)),
+                  
             ],
           )
         ],
